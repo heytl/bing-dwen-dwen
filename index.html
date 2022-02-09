@@ -32,8 +32,8 @@
 
 				scene = new THREE.Scene();
 
-				const envmap = new THREE.TextureLoader().load( "http://r70z8fiah.bkt.clouddn.com/env2.jpg",function(texture){
-					const loader = new GLTFLoader().setPath( 'http://r70z8fiah.bkt.clouddn.com/' );
+				const envmap = new THREE.TextureLoader().load( "model/env.jpg",function(texture){
+					const loader = new GLTFLoader().setPath( 'model/' );
 					loader.load( 'dwendwen.gltf', function ( gltf ) {
 						gltf.scene.traverse( function ( child ) {
 							if(child.name=="outer"||child.name=="mask"){
